@@ -1,0 +1,1 @@
+MSBuild.exe .\xml_my\xml_my.vcxproj /t:rebuild

@@ -1,0 +1,127 @@
+package RCMMessage;
+
+enum MSG
+{
+	Upload_Request  = 0x00001001;
+	Upload_Response = 0x00001002;
+
+	Download_Request  = 0x00001003;
+	Download_Response  = 0x00001004;
+ 
+	List_Request = 0x00001005;
+	List_Response = 0x00001006;
+ 
+	File_Search_Request = 0x00001007;
+	File_Search_Response = 0x00001008;
+
+	String_Search_Request = 0x00001009;
+	String_Search_Response = 0x00001010;
+}
+
+message UploadRequest
+{
+	required string fileName = 1;
+	required string IP = 2;
+	required bool fileSet = 3;
+	required bool fileEnd = 4;
+	required bytes content = 5;
+}
+
+message UploadResponse
+{
+	required string fileName = 1;
+}
+
+message DownloadRequest
+{
+	required string path = 1;
+	required string IP = 2;
+
+}
+
+message DownloadResponse
+{
+	required string path = 1;
+	required bool fileSet = 2;
+	required bool fileEnd = 3;
+	required bytes content = 4;
+}
+
+message ListRequest
+{
+	required string IP = 1;
+	required string path = 2;
+}
+
+message ListResponse
+{
+	required string path = 1;
+	repeated string fileName = 2;
+	repeated string dirName = 3;
+}
+
+message FileSearchRequest
+{
+	required string fileName = 1;
+}
+
+message FileSearchResponse
+{
+	required string fileName = 1;
+	message fileInfo
+	{
+		required string path = 1;
+		required string ip = 2;
+	}
+	repeated fileInfo info = 2;
+}
+
+message StringSearchRequest
+{
+	required string search = 1;
+	required int32 threadNum = 2;
+}
+
+message StringSearchResponse
+{
+	required string search = 1;
+	message fileInfo
+	{
+		required string path = 1;
+		required string ip = 2;
+	}
+	repeated fileInfo info = 2;
+}
+
+message Request
+{
+	optional UploadRequest upload_req = 1;
+	optional DownloadRequest download_req = 2;
+	optional ListRequest list_req = 3;
+	optional FileSearchRequest file_search_req = 4;
+	optional StringSearchRequest string_search_req = 5;
+}
+
+message Response
+{
+	required bool result = 1;
+	optional bytes error_description = 2;
+	required bool last_block = 3;
+	required fixed32 block_index = 4;
+
+	optional UploadResponse upload_res = 5;
+	optional DownloadResponse download_res = 6;
+	optional ListResponse list_res = 7;
+	optional FileSearchResponse file_search_res = 8;
+	optional StringSearchResponse string_search_res = 9;
+}
+
+message Message
+{
+	required MSG type = 1;
+	required fixed32 sequence = 2;
+
+	optional Request request = 3;
+	optional Response response = 4;
+}
+

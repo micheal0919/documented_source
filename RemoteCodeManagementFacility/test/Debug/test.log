@@ -1,0 +1,103 @@
+﻿生成启动时间为 4/30/15 2:47:00。
+     1>项目“C:\my_app\RemoteCodeManagementFacility\test\test.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../Include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Common\FileSystem.cpp ..\Common\RCMMessage.pb.cc ..\Common\WinUtility.cpp main.cpp
+         main.cpp
+         WinUtility.cpp
+         RCMMessage.pb.cc
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1293): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<const Element*,Element*>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=google::protobuf::uint64 *
+         ,            Element=google::protobuf::uint64
+         ,            _InIt=const google::protobuf::uint64 *
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1292): 编译类 模板 成员函数“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element *,const Element *,int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1285): 参见对正在编译的函数 模板 实例化“void google::protobuf::internal::ElementCopier<Element,false>::operator ()(Element *,const Element *,int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1285): 参见对正在编译的类 模板 实例化“google::protobuf::internal::ElementCopier<Element,false>”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1284): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element *,const Element *,int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1279): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::CopyArray(Element *,const Element *,int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1278): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element *,Element *,int)”时
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1254): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::MoveArray(Element *,Element *,int)”的引用
+                 with
+                 [
+                     Element=google::protobuf::uint64
+                 ]
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1223): 编译类 模板 成员函数“void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)”时
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1065): 参见对正在编译的函数 模板 实例化“void google::protobuf::RepeatedField<google::protobuf::uint64>::Reserve(int)”的引用
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\repeated_field.h(1010): 编译类 模板 成员函数“int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const”时
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\wire_format_lite_inl.h(277): 参见对正在编译的函数 模板 实例化“int google::protobuf::RepeatedField<google::protobuf::uint64>::size(void) const”的引用
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\wire_format_lite_inl.h(257): 参见对正在编译的类 模板 实例化“google::protobuf::RepeatedField<google::protobuf::uint64>”的引用
+                 c:\my_app\remotecodemanagementfacility\include\google\protobuf\wire_format_lite_inl.h(310): 参见对正在编译的函数 模板 实例化“bool google::protobuf::internal::WireFormatLite::ReadRepeatedFixedSizePrimitive<google::protobuf::uint64,TYPE_FIXED64>(int,google::protobuf::uint32,google::protobuf::io::CodedInputStream *,google::protobuf::RepeatedField<google::protobuf::uint64> *)”的引用
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+         FileSystem.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\my_app\RemoteCodeManagementFacility\Debug\test.exe" /INCREMENTAL /NOLOGO Ws2_32.lib ../Lib/libprotobuf_d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\my_app\RemoteCodeManagementFacility\Debug\test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\my_app\RemoteCodeManagementFacility\Debug\test.lib" /MACHINE:X86 Debug\FileSystem.obj
+         Debug\RCMMessage.pb.obj
+         Debug\WinUtility.obj
+         Debug\main.obj
+     1>libprotobuf_d.lib(atomicops_internals_x86_msvc.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(atomicops_internals_x86_msvc.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(common.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(common.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(once.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(once.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(stringprintf.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(stringprintf.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(arena.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(arena.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(arenastring.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(arenastring.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(extension_set.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(extension_set.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(generated_message_util.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(generated_message_util.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(map_field.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(map_field.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(message_lite.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(message_lite.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(repeated_field.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(repeated_field.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(wire_format_lite.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(wire_format_lite.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(coded_stream.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(coded_stream.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(zero_copy_stream.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(zero_copy_stream.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(zero_copy_stream_impl_lite.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(zero_copy_stream_impl_lite.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(strutil.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(strutil.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(substitute.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(substitute.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(structurally_valid.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(structurally_valid.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(descriptor.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(descriptor.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(descriptor_database.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(descriptor_database.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(descriptor.pb.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(descriptor.pb.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(dynamic_message.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(dynamic_message.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(extension_set_heavy.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(extension_set_heavy.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(generated_message_reflection.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(generated_message_reflection.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(message.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(message.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(reflection_ops.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(reflection_ops.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(text_format.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(text_format.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(unknown_field_set.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(unknown_field_set.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(wire_format.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(wire_format.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(strtod.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(strtod.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(tokenizer.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(tokenizer.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libprotobuf_d.lib(zero_copy_stream_impl.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“libprotobuf_d.lib(zero_copy_stream_impl.obj)”或在“C:\my_app\RemoteCodeManagementFacility\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         test.vcxproj -> C:\my_app\RemoteCodeManagementFacility\Debug\test.exe
+     1>已完成生成项目“C:\my_app\RemoteCodeManagementFacility\test\test.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.40

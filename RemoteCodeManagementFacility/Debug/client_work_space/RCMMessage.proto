@@ -1,0 +1,97 @@
+package RCMMessage;
+
+enum MSG
+{
+	Upload_Request  = 0x00001001;
+	Upload_Response = 0x00001002;
+
+	Download_Request  = 0x00001003;
+	Download_Response  = 0x00001004;
+ 
+	
+	List_Request = 0x00001005;
+	List_Response = 0x00001006;
+ 
+	Find_Request = 0x00001007;
+	Find_Response = 0x00001008;
+
+	Search_Request = 0x00001009;
+	Search_Response = 0x00001010;
+}
+
+message UploadRequest
+{
+	required string fileName = 1;
+	required string IP = 2;
+	required bool fileSet = 3;
+	required bool fileEnd = 4;
+	required bytes content = 5;
+}
+
+message UploadResponse
+{
+	required string fileName = 1;
+}
+
+message DownloadRequest
+{
+	required string fileName = 1;
+}
+
+message DownladResponse
+{
+	required int32 isError = 1;
+	optional string errorInfo = 2;
+}
+
+message ListRequest
+{
+	required string fileName = 1;
+}
+
+message LisrResponse
+{
+	required string fileName = 1;
+}
+
+message SearchRequest
+{
+	required string fileName = 1;
+}
+
+message SearchResponse
+{
+	required string fileName = 1;
+}
+
+
+message Request
+{
+	optional UploadRequest upload_req = 1;
+	optional DownloadRequest download_req = 2;
+	optional ListRequest list_req = 3;
+	optional SearchRequest search_req = 4;
+}
+
+message Response
+{
+	required bool result = 1;
+	optional bytes error_description = 2;
+	required bool last_block = 3;
+	required fixed32 block_index = 4;
+
+	optional UploadResponse upload_res = 5;
+	optional DownladResponse download_res = 6;
+	optional LisrResponse list_res = 7;
+	optional SearchResponse search_res = 8;
+}
+
+message Message
+{
+	required MSG type = 1;
+	required fixed32 sequence = 2;
+
+	optional Request request = 3;
+	optional Response response = 4;
+}
+

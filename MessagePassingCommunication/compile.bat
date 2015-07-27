@@ -1,0 +1,1 @@
+devenv "MessagePassingCommunication.sln" /rebuild debug
